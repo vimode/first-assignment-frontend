@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-primary: "Montserrat", sans-serif;
+  --font-size-primary: 14px;
+
+  --white: #ffffff;
+  --website-color-orange: #ffce22;
+  --website-color-orange-hover: #ffd84d;
+  --website-color-black: #1f2128;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-primary);
+  font-weight: 400;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--white);
+  color: var(--website-color-black);
+}
+
+#root {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  padding-inline: 1rem;
+}
