@@ -6,15 +6,15 @@ This project is a replication of a specified component based on the design provi
 
 ## Live Demo
 
-You can view the live version of this project here.
+Visit the live version of this project.
 
 ## Installation
 
 1. Clone the repository:
 
 ```bash
-git clone
-cd
+git clone https://github.com/vimode/first-assignment-frontend
+cd first-assignment-frontend
 ```
 
 2. Install dependencies using npm

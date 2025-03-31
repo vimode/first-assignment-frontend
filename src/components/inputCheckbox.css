@@ -1,0 +1,117 @@
+section {
+  .input-container {
+    padding: 8px 22px;
+    --focus-box-shadow: 0 0 2px 4px hsla(220, 92%, 55%, 0.1);
+    --checkbox-hover-bg: #5087f8;
+    --checkbox-bg: #2469f6;
+    --checkbox-active-border-bg: #bdbdbd;
+
+    label {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      &:hover {
+        input[type="checkbox"] {
+          border-color: var(--checkbox-active-border-bg);
+
+          ~ .checkmark-svg-container {
+            display: block;
+
+            svg path {
+              stroke: #e3e3e3;
+            }
+          }
+          &:checked {
+            border-color: var(--checkbox-hover-bg);
+            background-color: var(--checkbox-hover-bg);
+          }
+        }
+      }
+
+      &:active {
+        input[type="checkbox"] {
+          border-color: var(--checkbox-active-border-bg);
+          box-shadow: var(--focus-box-shadow);
+
+          ~ .checkmark-svg-container {
+            display: block;
+
+            svg path {
+              stroke: #878787;
+            }
+          }
+          &:checked {
+            box-shadow: var(--focus-box-shadow);
+          }
+        }
+      }
+    }
+
+    .checkbox-container {
+      position: relative;
+    }
+
+    input[type="checkbox"] {
+      appearance: none;
+      background-color: var(--white);
+      width: 23px;
+      height: 23px;
+      border: 1px solid #e3e3e3;
+      border-radius: 6px;
+      position: relative;
+
+      &:focus {
+        border-color: var(--checkbox-active-border-bg);
+        box-shadow: var(--focus-box-shadow);
+        outline: none;
+
+        ~ .checkmark-svg-container {
+          display: block;
+
+          svg path {
+            stroke: #878787;
+          }
+        }
+        &:checked {
+          border-color: var(--checkbox-hover-bg);
+          background-color: var(--checkbox-hover-bg);
+          box-shadow: var(--focus-box-shadow);
+          outline: none;
+        }
+      }
+
+      &:active {
+        background-color: var(--hover-bg);
+
+        ~ .checkmark-svg-container {
+          display: block;
+
+          svg path {
+            stroke: var(--white);
+          }
+        }
+      }
+
+      &:checked {
+        background-color: var(--checkbox-bg);
+        border-color: var(--checkbox-bg);
+
+        ~ .checkmark-svg-container {
+          display: block;
+
+          svg path {
+            stroke: var(--white);
+          }
+        }
+      }
+    }
+
+    .checkmark-svg-container {
+      display: none;
+      position: absolute;
+      top: 3px;
+      left: 3px;
+    }
+  }
+}

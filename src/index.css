@@ -14,8 +14,10 @@
 }
 
 button,
-input {
+input,
+label {
   font: inherit;
+  cursor: pointer;
 }
 
 body {
