@@ -6,7 +6,7 @@ This project is a replication of a specified component based on the design provi
 
 ## Live Demo
 
-Visit the live version of this project.
+[Visit the live version of this project.](https://first-assignment-frontend.vercel.app/)
 
 ## Installation
 
